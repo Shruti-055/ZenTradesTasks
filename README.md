@@ -1,4 +1,4 @@
-Task 1: Displaying Product Information from JSON Data
+Tasks: Displaying Product Information from JSON Data
 This project demonstrates fetching JSON data from an API endpoint, sorting the products based on popularity, and displaying the sorted product information on a webpage.
 
 Features
