@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Import Products</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/task2.css"> 
+</head>
+<body>
+  <div class="container  mt-4">
+    <h5 class="mb-4">Import Products</h5>
+    <div class="row ">
+      <div class="col-md-6">
+        <div class="card step1 mt-1 mb-4">
+          <div class="card-body">
+            <h6 class="card-title ">Step 1:</h6>
+            <input type="file" id="fileInput" class="form-control-file mb-3"> <!-- Add id="fileInput" here -->
+            <div class="text-right" id="fileStatus"></div> <!-- Update id="fileStatus" here -->
+            <small class="text-muted">Supports file Type(s): CSV, JSON</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mt-1 mb-4">
+          <div class="card-body">
+            <h6 class="card-title">Step 2:</h6>
+            <div class="form-group row">
+              <label for="fileType" class="col-sm-4 col-form-label ">File Type:</label>
+              <div class="col-sm-6">
+                <select class="form-control" id="fileType">
+                  <option value="json">JSON</option>
+                  <option value="csv">CSV</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="characterEncoding" class="col-sm-4 col-form-label ">Character Encoding:</label>
+              <div class="col-sm-6">
+                <select class="form-control" id="characterEncoding">
+                  <option value="utf-8">UTF-8</option>
+                  <option value="utf-16">UTF-16</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="delimiter" class="col-sm-4 col-form-label ">Delimiter:</label>
+              <div class="col-sm-6">
+                <select class="form-control" id="delimiter" size="1">
+                  <option value=",">Comma (,)</option>
+                  <option value=";">Semicolon (;)</option>
+                  <option value="|">Pipe (|)</option>
+                  <!-- Add other delimiter options here -->
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="hasHeader" class="col-sm-4 col-form-label ">Has Header:</label>
+              <div class="col-sm-6">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="hasHeader">
+                  <label class="form-check-label" for="hasHeader"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h6 class="card-title">Step 3:</h6>
+            <p class="card-title">Display Handling</p>
+            <p class="card-title">Select the Fields to be Displayed:</p>
+            <div class="row">
+              <div class="col-md-6">
+                <p>Available Fields</p>
+                <div id="availableFields" class="fields-container"></div>
+              </div>
+              <div class="col-md-6">
+                <>Fields to be Displayed</>
+                <div id="fieldsToDisplay" class="fields-container"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 mt-4">
+        <div class="d-flex justify-content-end">
+          <button class="btn btn-primary mr-2">Next</button>
+          <button class="btn btn-secondary">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="assets/scripts.js"></script>
+</body>
+</html>
