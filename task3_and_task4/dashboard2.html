@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Company Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="assets/css/dash.css">
+</head>
+<body>
+  <div class="container">
+    <h5 class="">Company metrics</h5>
+    <div class="row mb-4">
+      <div class="col-md-3">
+        <div class="card" id="totalRevenueCard">
+          <div class="card-body">
+            <h5 class="card-title">Total Revenue </h5>
+            
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Total Jobs Avg</h5>
+            
+            <p class="card-text">$850.86</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Avg Tickets Created</h5>
+            <!-- Display average tickets created here -->
+            <p class="card-text">655</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Tickets Scheduled</h5>
+            <!-- Display tickets scheduled here -->
+            <p class="card-text">735</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second row with metrics -->
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Outstanding Amount</h5>
+            <!-- Display outstanding amount here -->
+            <p class="card-text">$110,448</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Membership Sold</h5>
+            <!-- Display membership sold here -->
+            <p class="card-text">105</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Job Completed</h5>
+            <!-- Display job completed here -->
+            <p class="card-text">436</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Total Cancelled</h5>
+            <!-- Display total cancelled here -->
+            <p class="card-text">65</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mt-5">
+          <div class="card-body">
+            <h5 class="card-title">Revenue by Job Location</h5>
+            <canvas id="revenueByLocationChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card mt-5">
+          <div class="card-body">
+            <h5 class="card-title">Revenue by Job Type</h5>
+            <canvas id="revenueByJobTypeChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/dashboard_data.js"></script>
+  <script src="assets/js/dashboard_script.js"></script>
+</body>
+</html>

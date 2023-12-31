@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Login Page</title>
-  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
   <div class="login-container">
-    
     <img src="assets/images/name.png" alt="Login Heading Image" class="name">
     <form id="login-form" onsubmit="return validateForm()">
       <div class="input-group">
@@ -22,9 +21,9 @@
       </div>
       <button type="submit">Login</button>
     </form>
-    <p><a href="forgot_password.html" class="pass">Forgot your password?</a></p>
+    <p><a href="mailto:support@smartserv.io" onclick="openEmailClient()" class="pass">Forgot your password?</a></p>
   </div>
 
-  <script src="assets/script.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
